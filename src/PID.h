@@ -9,13 +9,15 @@ public:
   double p_error;
   double i_error;
   double d_error;
+  double cte_prev;
+  double cum_cte;
 
   /*
   * Coefficients
   */ 
-  double Kp;
-  double Ki;
-  double Kd;
+  double tau_p;
+  double tau_i;
+  double tau_d;
 
   /*
   * Constructor
