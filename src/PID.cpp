@@ -21,8 +21,6 @@ void PID::Init(double Kp, double Kd, double Ki) {
     p_error = 0;
     d_error = 0;
     i_error = 0;
-
-    // std::cout << "Init WTF?" << std::endl;
 }
 
 void PID::UpdateError(double cte, double dt) {
